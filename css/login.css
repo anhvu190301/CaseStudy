@@ -1,0 +1,15 @@
+.container {
+    margin-top: 80px !important;
+}
+
+.login .error {
+    text-align: start;
+    color: red;
+}
+
+@media (min-width: 768px) {
+    .login {
+        display: flex;
+        justify-content: center;
+    }
+}

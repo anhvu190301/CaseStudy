@@ -1,0 +1,8 @@
+.footer {
+    background-color: #252641;
+    color: var(--light-color);
+}
+
+.footer .container {
+    margin: 0 auto !important;
+}
