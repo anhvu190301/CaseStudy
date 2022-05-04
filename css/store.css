@@ -16,6 +16,11 @@ a {
     font-weight: 600;
 }
 
+.shop-filters__list,
+.list-group li {
+    background-color: #949fe22b;
+}
+
 .shop-filters__item {
     border: none !important;
     display: -webkit-flex;

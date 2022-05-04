@@ -68,8 +68,6 @@ let classes = (classes) => document.getElementsByClassName(classes);
 const shopProducts = id("shop-products");
 const shopFiltersList = classes("list-group")[0];
 
-const formatPrice = (price) => new Intl.NumberFormat().format(price);
-
 window.saveIndex = (idx) => {
     localStorage.setItem("id", idx);
 };
@@ -91,7 +89,7 @@ window.renderProducts = (productID) => {
                 e.id
             })" href="../html/article-detail.html" >
                 <div class="shop-product__img-wrapper">
-                    <img src="${e.img[0]}" alt="" />
+                    <img src="${e.img}" alt="" />
                 </div>
                 <div class="shop-product__content">
                     <div class="shop-product__name">${e.title}</div>
@@ -113,7 +111,7 @@ window.renderProducts = (productID) => {
                         >(${Math.floor(Math.random() * 1000) + 100})</span
                     >
                 </div>
-                <div class="shop-product__price">${formatPrice(e.price)}đ</div>
+                <div class="shop-product__price">${e.price}</div>
             </div>
             <div class="shop-product__btns">
                 <div class="shop-product__btn">
@@ -170,7 +168,7 @@ searchBar.addEventListener("input", function (e) {
         <div class="shop-product" >
             <a onclick="return saveIndex(${
                 e.id
-            })" href="../../05-57_Huynh-Quoc-Bao_Nguyen-Van-Phu_20052221_20048881/html/article-detail.html" >
+            })" href="../html/article-detail.html" >
                 <div class="shop-product__img-wrapper">
                     <img src="${e.image[0]}" alt="" />
                 </div>

@@ -1,11 +1,11 @@
-import product1 from "../data/baby-boy-suit.json" assert { type: "json" };
-import product2 from "../data/baby-boy-clothes.json" assert { type: "json" };
-import product3 from "../data/baby-boy-coat.json" assert { type: "json" };
-import product4 from "../data/baby-girl-clothes.json" assert { type: "json" };
-import product5 from "../data/baby-girl-coat.json" assert { type: "json" };
-import product6 from "../data/baby-girl-dress.json" assert { type: "json" };
-import product7 from "../data/baby-girl-suit.json" assert { type: "json" };
-import product8 from "../data/baby-girl-trousers.json" assert { type: "json" };
+import product1 from "../data/mlb.json" assert { type: "json" };
+import product2 from "../data/adidas.json" assert { type: "json" };
+import product3 from "../data/balenciaga.json" assert { type: "json" };
+import product4 from "../data/converse.json" assert { type: "json" };
+import product5 from "../data/gucci.json" assert { type: "json" };
+import product6 from "../data/nike-jordan.json" assert { type: "json" };
+import product7 from "../data/vans.json" assert { type: "json" };
+import product8 from "../data/xvessel.json" assert { type: "json" };
 
 const products = product1.concat(
     product2,
@@ -66,7 +66,7 @@ const renderProduct = () => {
                     <div class="cart-product">
                         <div class="cart-product__img-wrapper">
                             <img
-                                src="${findProduct(e.id)?.image[0]}"
+                                src="${findProduct(e.id)?.img[0]}"
                                 alt=""
                             />
                         </div>

@@ -1,13 +1,9 @@
-import product from "../data/baby-boy-suit.json" assert { type: "json" };
-import boy_product from "../data/baby-boy-clothes.json" assert { type: "json" };
-import girl_product from "../data/baby-girl-clothes.json" assert { type: "json" };
+import product from "../data/adidas.json" assert { type: "json" };
 
 let id = (id) => document.getElementById(id);
 let classes = (classes) => document.getElementsByClassName(classes);
 
 const hotProducts = id("shop-products");
-const boyProducts = id("shop-products__boy");
-const girlProducts = id("shop-products__girl");
 
 const formatPrice = (price) => new Intl.NumberFormat().format(price);
 
@@ -25,7 +21,7 @@ const renderProduct = (products, elementHTML) => {
                 e.id
             })" href="../html/article-detail.html">
                 <div class="shop-product__img-wrapper">
-                    <img src="${e.image[0]}" alt="" />
+                    <img src="${e.img[0]}" alt="" />
                 </div>
                 <div class="shop-product__content">
                     <div class="shop-product__name">${e.title}</div>
@@ -57,7 +53,3 @@ const renderProduct = (products, elementHTML) => {
 };
 
 renderProduct(product, hotProducts);
-
-renderProduct(boy_product, boyProducts);
-
-renderProduct(girl_product, girlProducts);

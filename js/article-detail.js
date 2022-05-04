@@ -1,11 +1,12 @@
-import product1 from "../data/baby-boy-suit.json" assert { type: "json" };
-import product2 from "../data/baby-boy-clothes.json" assert { type: "json" };
-import product3 from "../data/baby-boy-coat.json" assert { type: "json" };
-import product4 from "../data/baby-girl-clothes.json" assert { type: "json" };
-import product5 from "../data/baby-girl-coat.json" assert { type: "json" };
-import product6 from "../data/baby-girl-dress.json" assert { type: "json" };
-import product7 from "../data/baby-girl-suit.json" assert { type: "json" };
-import product8 from "../data/baby-girl-trousers.json" assert { type: "json" };
+import product2 from "../data/mlb.json" assert { type: "json" };
+import product1 from "../data/adidas.json" assert { type: "json" };
+import product3 from "../data/balenciaga.json" assert { type: "json" };
+import product4 from "../data/converse.json" assert { type: "json" };
+import product5 from "../data/gucci.json" assert { type: "json" };
+import product6 from "../data/nike-jordan.json" assert { type: "json" };
+import product7 from "../data/vans.json" assert { type: "json" };
+import product8 from "../data/xvessel.json" assert { type: "json" };
+
 
 const products = product1.concat(
     product2,
@@ -63,7 +64,7 @@ const renderProduct = () => {
     const imgProduct = classes("detail-img")[0];
 
     const slideItem = id("detail-slides");
-    slideItem.innerHTML = product.image
+    slideItem.innerHTML = product.img
         .map(
             (e, index) =>
                 `
@@ -83,7 +84,7 @@ const renderProduct = () => {
         .join("");
 
     const sliderNav = id("detail-slider-nav");
-    sliderNav.innerHTML = product.image
+    sliderNav.innerHTML = product.img
         .map(
             (e, index) =>
                 `
@@ -115,7 +116,7 @@ hotProducts.innerHTML = product1
                 e.id
             })" href="../html/article-detail.html" >
                 <div class="shop-product__img-wrapper">
-                    <img src="${e.image[0]}" alt="" />
+                    <img src="${e.img[0]}" alt="" />
                 </div>
                 <div class="shop-product__content">
                     <div class="shop-product__name">${e.title}</div>
