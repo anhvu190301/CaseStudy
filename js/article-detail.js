@@ -1,11 +1,11 @@
-import product2 from "../data/mlb.json" assert { type: "json" };
-import product1 from "../data/adidas.json" assert { type: "json" };
-import product3 from "../data/balenciaga.json" assert { type: "json" };
-import product4 from "../data/converse.json" assert { type: "json" };
-import product5 from "../data/gucci.json" assert { type: "json" };
-import product6 from "../data/nike-jordan.json" assert { type: "json" };
-import product7 from "../data/vans.json" assert { type: "json" };
-import product8 from "../data/xvessel.json" assert { type: "json" };
+import product2 from "../data/xiaomi.json" assert { type: "json" };
+import product1 from "../data/iphone.json" assert { type: "json" };
+import product3 from "../data/samsung.json" assert { type: "json" };
+import product4 from "../data/appo.json" assert { type: "json" };
+import product5 from "../data/vivo.json" assert { type: "json" };
+import product6 from "../data/realme.json" assert { type: "json" };
+import product7 from "../data/nokia.json" assert { type: "json" };
+import product8 from "../data/itel.json" assert { type: "json" };
 
 
 const products = product1.concat(
@@ -102,7 +102,7 @@ const renderProduct = () => {
     classes("detail-content__title")[0].innerHTML = product.title;
     classes("detail-content__price")[0].innerHTML = `${formatPrice(
         product.price
-    )}đ`;
+    )}$`;
 };
 
 renderProduct();
@@ -138,9 +138,9 @@ hotProducts.innerHTML = product1
                         >(${Math.floor(Math.random() * 1000) + 100})</span
                     >
                 </div>
-                <div class="shop-product__price">${formatPrice(e.price)}đ</div>
+                <div class="shop-product__price">${formatPrice(e.price)}$</div>
             </div>
-            <div class="shop-product__label">Yêu thích</div>
+            <div class="shop-product__label">Favourite</div>
         </div>
         `
     )

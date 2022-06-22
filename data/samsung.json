@@ -1,0 +1,30 @@
+[
+    {
+        "id": 83,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/235838/samsung-galaxy-s22-ultra-1-1.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/235838/galaxy-s22-ultra-white-1.jpg"
+        ],
+        "title": "Điện thoại Samsung Galaxy S22 Ultra 5G 128GB",
+        "price": 1390
+    },
+    {
+        "id": 84,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/251856/samsung-galaxy-a03-1-4.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/251856/samsung-galaxy-a03-1-3.jpg"
+        ],
+        "title": "Điện thoại Samsung Galaxy A03 3GB ",
+        "price": 990
+    },
+    {
+        "id": 85,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/247507/samsung-galaxy-a52s-5g-1-4.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/247507/samsung-galaxy-a52s-5g-1-6.jpg"
+        ],
+        "title": "Điện thoại Samsung Galaxy A52s 5G 128GB",
+        "price": 1890
+    }
+    
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 50,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/250622/oppo-find-x5-pro-1-1.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/250622/oppo-find-x5-pro-trang-1.jpg"
+        ],
+        "title": "Điện thoại OPPO Find X5 Pro 5G",
+        "price": 598
+    },
+    {
+        "id": 51,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/233460/oppo-reno5-5g-bac-1-org.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/233460/oppo-reno5-5g-den--org.jpg"
+        ],
+        "title": "Điện thoại OPPO Reno5 5G",
+        "price": 598
+    },
+    {
+        "id": 52,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/240631/oppo-a16-1-2.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/240631/oppo-a16-1-1.jpg"
+        ],
+        "title": "Điện thoại OPPO A16 ",
+        "price": 798
+    }
+]

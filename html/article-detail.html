@@ -10,6 +10,7 @@
     <script src="../assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
     <!-- import jquery -->
     <script src="../assets/jquery/jquery-3.6.0.js"></script>
+    <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
     <!-- import ion icon  -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -27,10 +28,10 @@
     <script type="module" src="../js/article-detail.js"></script>
 
     <script>
-        $(function() {
+        $(function () {
             $(".header").load("../html/header.html");
         });
-        $(function() {
+        $(function () {
             $(".footer").load("../html/footer.html");
         });
     </script>
@@ -60,213 +61,201 @@
                                 <ion-icon name="star"></ion-icon>
                             </div>
                             <div class="detail-content__reviews">
-                                1233 lượt đánh giá
+                                1233 reviews
                             </div>
                         </div>
                         <div class="detail-content__price"></div>
-                        <div class="detail-content__size">
+                        <!-- <div class="detail-content__size">
                             <span>Chọn kích cỡ</span>
                             <select id="form-select" class="form-select" aria-label="">
-                                    <option value="1" selected>
-                                        Size 11 (28kg - 30kg)
-                                    </option>
-                                    <option value="2">
-                                        Size 12 (30kg - 32kg)
-                                    </option>
-                                    <option value="3">
-                                        Size 13 (32kg - 34kg)
-                                    </option>
-                                    <option value="4">
-                                        Size 14 (34kg - 36kg)
-                                    </option>
-                                </select>
-                        </div>
+                                <option value="1" selected>
+                                    Size 35
+                                </option>
+                                <option value="2">
+                                    Size 36
+                                </option>
+                                <option value="3">
+                                    Size 37
+                                </option>
+                                <option value="4">
+                                    Size 38
+                                </option>
+                                <option value="4">
+                                    Size 39
+                                </option>
+                                <option value="4">
+                                    Size 40
+                                </option>
+                                <option value="4">
+                                    Size 41
+                                </option>
+                            </select>
+                        </div> -->
                         <div class="detail-content__add-cart">
                             <div class="input-group">
                                 <span class="input-group-btn">
-                                        <button
-                                            type="button"
-                                            class="quantity-left-minus btn btn-number"
-                                            data-type="minus"
-                                            data-field=""
-                                        >
-                                            <ion-icon
-                                                name="remove-outline"
-                                            ></ion-icon>
-                                        </button>
-                                    </span>
-                                <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100" />
+                                    <button type="button" class="quantity-left-minus btn btn-number" data-type="minus"
+                                        data-field="">
+                                        <ion-icon name="remove-outline"></ion-icon>
+                                    </button>
+                                </span>
+                                <input type="text" id="quantity" name="quantity"
+                                    class="form-control input-number text-center" value="1" min="1" max="100" />
                                 <span class="input-group-btn">
-                                        <button
-                                            type="button"
-                                            class="quantity-right-plus btn btn-number"
-                                            data-type="plus"
-                                            data-field=""
-                                        >
-                                            <ion-icon
-                                                name="add-outline"
-                                            ></ion-icon>
-                                        </button>
-                                    </span>
+                                    <button type="button" class="quantity-right-plus btn btn-number" data-type="plus"
+                                        data-field="">
+                                        <ion-icon name="add-outline"></ion-icon>
+                                    </button>
+                                </span>
                             </div>
                             <button id="btn-add-cart" class="btn btn-add">
-                                    <span class="btn-label"
-                                        ><ion-icon
-                                            name="cart-outline"
-                                        ></ion-icon
-                                        >Thêm vào giỏ hàng</span
-                                    >
-                                </button>
+                                <span class="btn-label">
+                                    <ion-icon name="cart-outline"></ion-icon>Add to cart
+                                </span>
+                            </button>
                         </div>
                         <div class="detail-content__commits">
                             <div class="detail-content__commit">
                                 <ion-icon name="car-outline"></ion-icon>
-                                <span>Miễn phí vận chuyển cho tất cả các đơn
-                                        đặt hàng</span
-                                    >
-                                </div>
-                                <div class="detail-content__commit">
-                                    <ion-icon
-                                        name="bag-check-outline"
-                                    ></ion-icon>
-                                    <span>Trả hàng dễ dàng trong 2 giờ</span>
+                                <span><b>Freeship</b></span>
                             </div>
                             <div class="detail-content__commit">
+                                <ion-icon name="bag-check-outline"></ion-icon>
+                                <span> <b>Free Returns</b><br></span><br>
+                            </div>
+                            <div class="detail-content__commit"><span> Support to change the product within 3 to 5 days, if product error.</span></div>
+                            <div class="detail-content__commit">
                                 <ion-icon name="pricetag-outline"></ion-icon>
-                                <span>Đặt hàng trước buổi trưa để gửi cùng
-                                        ngày</span
-                                    >
-                                </div>
+                                <span><b>Order before noon for same day delivery</b></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="detail__description">
-                <div class="detail-tab">
-                    <span>Thông tin sản phẩm</span>
-                                <ul class="table list-unstyled product-detail-table">
-                                    <li><span>Mã SP</span><span>TEST0001</span></li>
-                                    <li>
-                                        <span>Độ tuổi</span><span>10 tháng - 15 tuổi</span>
-                                    </li>
-                                    <li><span>Cân nặng</span><span>8kg - 40kg</span></li>
-                                    <li><span>Số lượng trong kho</span><span>1</span></li>
-                                    <li><span>Chất liệu</span><span>cotton</span></li>
-                                    <li><span>Xuất xứ</span><span>Việt Nam</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="section-girl-items row mt-5">
-                            <div class="heading-bar top-week">SẢN PHẨM TƯƠNG TỰ</div>
-                            <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-                                <div id="shop-products" class="shop-products"></div>
-                            </div>
-                        </div>
+        </div>
+        <div class="detail__description">
+            <div class="detail-tab">
+                <span>Product information</span>
+                <ul class="table list-unstyled product-detail-table">
+                    <li><span>Màn hình:</span><span>LCD2.4"256.000 màu</span></li>
+                    <li><span>SIM:</span><span>2 Micro SIMHỗ trợ 4G</span></li>
+                    <li><span>Stock</span><span>10</span></li>
+                    <div>
+                        <p>Cấu hình mạnh mẽ, trải nghiệm mượt mà</p>
                     </div>
+                </ul>
+            </div>
+        </div>
+        <div class="section-girl-items row mt-5">
+            <div class="heading-bar top-week">SIMILAR PRODUCT</div>
+            <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
+                <div id="shop-products" class="shop-products"></div>
+            </div>
+        </div>
+    </div>
 
-                    <div id="modal" class="modal" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Tham gia với chúng tôi</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>
-                                        Bạn chưa đăng nhập. Vui lòng đăng nhập để thực hiện tính năng này
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn" data-bs-dismiss="modal">
-                            Hủy
-                        </button>
-                                    <a href="../html/login.html">
-                                        <button type="button" class="btn btn-primary">
-                                Đăng nhập
-                            </button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer"></div>
+    <div id="modal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Join us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        You are not logged in. Please login to perform this feature
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">
+                        Cancle
+                    </button>
+                    <a href="../html/login.html">
+                        <button type="button" class="btn btn-primary">
+                            Login
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
 
-                    <script>
-                        $(document).ready(function() {
-                            var quantitiy = 0;
-                            $(".quantity-right-plus").click(function(e) {
-                                e.preventDefault();
-                                var quantity = parseInt($("#quantity").val());
-                                $("#quantity").val(quantity + 1);
-                            });
+    <script>
+        $(document).ready(function () {
+            var quantitiy = 0;
+            $(".quantity-right-plus").click(function (e) {
+                e.preventDefault();
+                var quantity = parseInt($("#quantity").val());
+                $("#quantity").val(quantity + 1);
+            });
 
-                            $(".quantity-left-minus").click(function(e) {
-                                e.preventDefault();
-                                var quantity = parseInt($("#quantity").val());
-                                if (quantity > 0) {
-                                    $("#quantity").val(quantity - 1);
-                                }
-                            });
-                        });
-                        $(document).ready(function() {
-                            $("#detail-slides").slick({
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                arrows: false,
-                                fade: true,
-                                asNavFor: "#detail-slider-nav",
-                            });
-                            $("#detail-slider-nav").slick({
-                                slidesToShow: 3,
-                                slidesToScroll: 1,
-                                asNavFor: "#detail-slides",
-                                dots: true,
-                                centerMode: true,
-                                focusOnSelect: true,
-                            });
-                        });
-                        $(document).ready(function() {
-                            $(".shop-products").slick({
-                                slidesToShow: 4,
-                                slidesToScroll: 1,
-                                autoplay: true,
-                                autoplaySpeed: 2000,
-                                infinite: true,
-                                responsive: [{
-                                    breakpoint: 768,
-                                    settings: {
-                                        slidesToShow: 3,
-                                    },
-                                }, {
-                                    breakpoint: 576,
-                                    settings: {
-                                        slidesToShow: 2,
-                                    },
-                                }, ],
-                            });
-                        });
-                        $(document).ready(function() {
-                            if (!sessionStorage.getItem("phone")) {
-                                $("#btn-add-cart").attr({
-                                    "data-bs-toggle": "modal",
-                                    "data-bs-target": "#modal",
-                                });
-                            } else {
-                                $("#btn-add-cart").removeAttr("data-bs-toggle");
-                                $("#btn-add-cart").removeAttr("data-bs-target");
-                            }
+            $(".quantity-left-minus").click(function (e) {
+                e.preventDefault();
+                var quantity = parseInt($("#quantity").val());
+                if (quantity > 0) {
+                    $("#quantity").val(quantity - 1);
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#detail-slides").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: "#detail-slider-nav",
+            });
+            $("#detail-slider-nav").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: "#detail-slides",
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true,
+            });
+        });
+        $(document).ready(function () {
+            $(".shop-products").slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },],
+            });
+        });
+        $(document).ready(function () {
+            if (!sessionStorage.getItem("phone")) {
+                $("#btn-add-cart").attr({
+                    "data-bs-toggle": "modal",
+                    "data-bs-target": "#modal",
+                });
+            } else {
+                $("#btn-add-cart").removeAttr("data-bs-toggle");
+                $("#btn-add-cart").removeAttr("data-bs-target");
+            }
 
-                            $("#btn-add-cart").on("click", function() {
-                                if (sessionStorage.getItem("phone")) {
-                                    if ($("#quantity").val() > 1) {
-                                        toastr.error("Không đủ số lượng hàng");
-                                        return false;
-                                    }
-                                    toastr.success("Thêm vào giỏ hàng thành công", "");
-                                }
-                            });
-                        });
-                    </script>
+            $("#btn-add-cart").on("click", function () {
+                if (sessionStorage.getItem("phone")) {
+                    if ($("#quantity").val() > 1) {
+                        toastr.error("Insufficient quantity of goods");
+                        return false;
+                    }
+                    toastr.success("Add to cart successfully", "");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

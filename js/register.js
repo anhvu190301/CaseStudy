@@ -9,7 +9,7 @@ const repassword = id("floatingRePassword");
 
 const errorMsg = classes("error");
 
-const regPhone = /((09|03|07|08|05)+([0-9]{8})\b)/;
+const regPhone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 const regPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
 const validate = (e) => {
@@ -19,9 +19,9 @@ const validate = (e) => {
 
     // validate phone
     if (phone.value === "") {
-        handleError(phone, 0, "Số điện thoại không được để trống", "red");
+        handleError(phone, 0, "Phone number can not be left blank", "red");
     } else if (!regPhone.test(phone.value)) {
-        handleError(phone, 0, "Số điện thoại sai định dạng", "red");
+        handleError(phone, 0, "Invalid phone number", "red");
     } else {
         handleError(phone, 0, "", "green");
         check++;
@@ -29,12 +29,12 @@ const validate = (e) => {
 
     // validate password
     if (password.value === "") {
-        handleError(password, 1, "Mật khẩu không được để trống", "red");
+        handleError(password, 1, "Password can not be blank", "red");
     } else if (!regPassword.test(password.value)) {
         handleError(
             password,
             1,
-            "Mật khẩu phải có ít nhất 8 ký tự gồm chữ và số",
+            "Password must be at least 8 alphanumeric characters",
             "red"
         );
     } else {
@@ -47,11 +47,11 @@ const validate = (e) => {
         handleError(
             repassword,
             2,
-            "Mật khẩu nhập lại không được để trống",
+            "Re-entered password cannot be blank",
             "red"
         );
     } else if (password.value !== repassword.value) {
-        handleError(repassword, 2, "Mật khẩu nhập lại không đúng", "red");
+        handleError(repassword, 2, "Re-entered password is incorrect", "red");
     } else {
         handleError(repassword, 2, "", "green");
         check++;

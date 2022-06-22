@@ -1,0 +1,29 @@
+[
+    {
+        "id": 62,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/274084/1.jpeg",
+            "https://cdn.tgdd.vn/Products/Images/42/274084/nokia-c21-plus-1.jpg"
+        ],
+        "title": "Điện thoại Nokia C21 Plus 64GB ",
+        "price": 848
+    },
+    {
+        "id": 63,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/270207/nokia-g21-1-1.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/270207/nokia-g21-tim-1.jpg"
+        ],
+        "title": "Điện thoại Nokia G21 ",
+        "price": 848
+    },
+    {
+        "id": 64,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/228366/nokia-215-1-org.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/228366/nokia-215-den-1-org.jpg"
+        ],
+        "title": "Điện thoại Nokia 215 4G",
+        "price": 580
+    }
+]

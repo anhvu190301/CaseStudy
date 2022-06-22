@@ -1,0 +1,30 @@
+[
+    {
+        "id": 38,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/153856/iphone-11-xanh-la-1-1-org.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/153856/iphone-11-vang-1-2-org.jpg"
+        ],
+        "title": "Điện thoại iPhone 11 64GB",
+        "price": 990
+    },
+    {
+        "id": 39,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-1-2.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-xanh-1.jpg"
+        ],
+        "title": "Điện thoại iPhone 13 Pro Max 128GB",
+        "price": 1490
+    },
+    {
+        "id": 40,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/228739/iphone-12-pro-512gb-xanh-1-org.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/228739/iphone-12-pro-512gb-xam-1-org.jpg"
+        ],
+        "title": "Điện thoại iPhone 12 Pro 512GB",
+        "price": 1190
+    }
+    
+]

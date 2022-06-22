@@ -1,0 +1,28 @@
+[
+    {
+        "id": 107,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/251897/itel-l6502-xanh-1-2.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/251897/itel-l6502-1-1.jpg"
+        ],
+        "title": "Điện thoại Itel L6502 ",
+        "price": 890
+    },
+    {
+        "id": 108,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/251896/itel-l6006-tim-1.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/251896/itel-l6006-xanh-1.jpg"
+        ],
+        "title": "Điện thoại Itel L6006",
+        "price": 890
+    },
+    {
+        "id": 109,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/260146/itel-it9210-1-1.jpg"
+        ],
+        "title": "Điện thoại Itel it9210 4G",
+        "price": 890
+    }
+]

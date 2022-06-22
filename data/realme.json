@@ -1,0 +1,29 @@
+[
+   {
+        "id": 1,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/261888/realme-c35-1-1.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/261888/realme-c35-den-11.jpg"
+        ],
+        "title": "Điện thoại Realme C35 64GB ",
+        "price": 169
+    },
+    {
+        "id": 2,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/250190/realme-9-pro-1-1.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/250190/realme-9-pro-1-2.jpg"
+        ],
+        "title": "Điện thoại Realme 9 Pro 5G",
+        "price": 798
+    },
+    {
+        "id": 3,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/233135/realme-8-bac-1-org.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/233135/realme-8--den-1-org.jpg"
+        ],
+        "title": "Điện thoại Realme 8",
+        "price": 698
+    }
+]

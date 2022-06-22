@@ -1,0 +1,29 @@
+[
+    {
+        "id": 95,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/249720/vivo-y15s-2021-d-1.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/249720/vivo-y15s-2021-tx-1.jpg"
+        ],
+        "title": "Điện thoại Vivo Y15s",
+        "price": 219
+    },
+    {
+        "id": 97,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/245607/vivo-v23e-xanh-1.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/245607/vivo-v23e-den-1.jpg"
+        ],
+        "title": "Điện thoại Vivo V23e",
+        "price": 219
+    },
+    {
+        "id": 99,
+        "img": [
+            "https://cdn.tgdd.vn/Products/Images/42/240286/vivo-y53s-xanh-tim-1-org.jpg",
+            "https://cdn.tgdd.vn/Products/Images/42/240286/vivo-y53s-den-1-org.jpg"
+        ],
+        "title": "Điện thoại Vivo Y53s",
+        "price": 219
+    }
+]

@@ -1,11 +1,11 @@
-import product1 from "../data/mlb.json" assert { type: "json" };
-import product2 from "../data/adidas.json" assert { type: "json" };
-import product3 from "../data/balenciaga.json" assert { type: "json" };
-import product4 from "../data/converse.json" assert { type: "json" };
-import product5 from "../data/gucci.json" assert { type: "json" };
-import product6 from "../data/nike-jordan.json" assert { type: "json" };
-import product7 from "../data/vans.json" assert { type: "json" };
-import product8 from "../data/xvessel.json" assert { type: "json" };
+import product1 from "../data/xiaomi.json" assert { type: "json" };
+import product2 from "../data/iphone.json" assert { type: "json" };
+import product3 from "../data/samsung.json" assert { type: "json" };
+import product4 from "../data/appo.json" assert { type: "json" };
+import product5 from "../data/vivo.json" assert { type: "json" };
+import product6 from "../data/realme.json" assert { type: "json" };
+import product7 from "../data/nokia.json" assert { type: "json" };
+import product8 from "../data/itel.json" assert { type: "json" };
 
 const listProduct = [
     product1,
@@ -27,39 +27,39 @@ listProduct.unshift(products);
 const filterList = [
     {
         id: 0,
-        text: "Toàn bộ",
+        text: "All",
     },
     {
         id: 1,
-        text: "Giày MLB",
+        text: "Xiaomi",
     },
     {
         id: 2,
-        text: "Giày Adidas",
+        text: "Iphone",
     },
     {
         id: 3,
-        text: "Giày Balenciaga",
+        text: "Samsung",
     },
     {
         id: 4,
-        text: "Giày Converse",
+        text: "Appo",
     },
     {
         id: 5,
-        text: "Giày Gucci",
+        text: "Vivo",
     },
     {
         id: 6,
-        text: "Giày Nike Jordan",
+        text: "Realme",
     },
     {
         id: 7,
-        text: "Giày Vans",
+        text: "Nokia",
     },
     {
         id: 8,
-        text: "Giày Xvessel",
+        text: "Itel",
     },
 ];
 let id = (id) => document.getElementById(id);
@@ -135,7 +135,7 @@ window.renderProducts = (productID) => {
     if (productID !== 0) {
         document.querySelector(
             ".shop-handle__label h4:nth-child(3)"
-        ).innerHTML = "Trang 1";
+        ).innerHTML = "Page 1";
     }
 };
 
@@ -192,7 +192,7 @@ searchBar.addEventListener("input", function (e) {
                         >(${Math.floor(Math.random() * 1000) + 100})</span
                     >
                 </div>
-                <div class="shop-product__price">${formatPrice(e.price)}đ</div>
+                <div class="shop-product__price">${formatPrice(e.price)}$</div>
             </div>
             <div class="shop-product__btns">
                 <div class="shop-product__btn">

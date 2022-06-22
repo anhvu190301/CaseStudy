@@ -1,4 +1,4 @@
-import product from "../data/adidas.json" assert { type: "json" };
+import product from "../data/iphone.json" assert { type: "json" };
 
 let id = (id) => document.getElementById(id);
 let classes = (classes) => document.getElementsByClassName(classes);
@@ -43,9 +43,9 @@ const renderProduct = (products, elementHTML) => {
                         >(${Math.floor(Math.random() * 1000) + 100})</span
                     >
                 </div>
-                <div class="shop-product__price">${formatPrice(e.price)}đ</div>
+                <div class="shop-product__price">${formatPrice(e.price)}$</div>
             </div>
-            <div class="shop-product__label">Yêu thích</div>
+            <div class="shop-product__label">Favourite</div>
         </div>
         `
         )

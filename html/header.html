@@ -19,105 +19,90 @@
 <body>
     <div class="navbar fixed-top navbar-light navbar-expand-md justify-content-between p-0">
         <a href="/" class="d-flex align-items-center mb-lg-0 text-black-50 text-decoration-none">
-            <img class="header-logo" src="../image/GENZLIIN.png" alt="" />
+            <img class="header-logo" src="../image/logo.png" alt="" />
         </a>
-        <a class="navbar-toggler p-2 me-2 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" href="#navbar">
+        <a class="navbar-toggler p-2 me-2 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            href="#navbar">
             <span class="navbar-toggler-icon"></span>
         </a>
         <div class="collapse navbar-collapse justify-content-between py-3" id="navbar">
             <ul class="navbar-nav mr-auto font-weight-bold">
                 <li>
-                    <a href="../index.html" class="nav-link px-2 text-black">Trang chủ</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="../html/store.html"
-                            class="nav-link px-2 text-black"
-                            >Cửa hàng</a
-                        >
-                    </li>
-                    <li class="position-relative">
-                        <a class="nav-link px-2 text-black cart">Giỏ hàng</a>
+                    <a href="../index.html" class="nav-link px-2 text-black"><b>Home</b></a>
+                </li>
+                <li>
+                    <a href="../html/store.html" class="nav-link px-2 text-black"><b>Shop</b></a>
+                </li>
+                <li class="position-relative">
+                    <a class="nav-link px-2 text-black cart"><b>Cart</b></a>
                     <span class="ping"></span>
                 </li>
                 <li>
-                    <a href="../html/about-us.html" class="nav-link px-2 text-black">Về chúng tôi</a
-                        >
-                    </li>
-                </ul>
-                <div
-                    id="header-btn-group"
-                    class="text-end header-btn-group d-flex justify-content-center"
-                >
-                    <a
-                        href="../html/login.html"
-                        class="text-decoration-none"
-                    >
-                        <button type="button" class="btn btn-login me-2">
-                            Đăng nhập
-                        </button></a
-                    >
-                    <a
-                        href="../html/register.html"
-                        class="text-decoration-none"
-                    >
-                        <button type="button" class="btn btn-register">
-                            Đăng ký
-                        </button></a
-                    >
-                </div>
+                    <a href="../html/about-us.html" class="nav-link px-2 text-black"><b>About us</b></a>
+                </li>
+            </ul>
+            <div id="header-btn-group" class="text-end header-btn-group d-flex justify-content-center">
+                <a href="../html/login.html" class="text-decoration-none">
+                    <button type="button" class="btn btn-login me-2">
+                        <b>Login</b>
+                    </button></a>
+                <a href="../html/register.html" class="text-decoration-none">
+                    <button type="button" class="btn btn-register">
+                        <b>Register</b>
+                    </button></a>
             </div>
         </div>
+    </div>
 
-        <script>
-            $(document).ready(function () {
-                if (sessionStorage.getItem("phone")) {
-                    $(".ping").addClass("active");
-                    let cart = localStorage.getItem("cart");
-                    if (cart !== null) {
-                        $(".ping")
-                            .first()
-                            .html(findOccurrences(JSON.parse(cart)).length);
-                    }
-                }
-            });
-            $(".cart").on("click", function () {
-                if (sessionStorage.getItem("phone")) {
-                    window.location.assign(
-                        "../html/cart.html"
-                    );
-                } else {
-                    window.location.replace(
-                        "../html/login.html"
-                    );
-                }
-            });
-            const findOccurrences = (arr = []) => {
-                const res = [];
-                arr.forEach((el) => {
-                    const index = res.findIndex((obj) => {
-                        return obj["id"] === el;
-                    });
-                    if (index === -1) {
-                        res.push({
-                            id: el,
-                            count: 1,
-                        });
-                    } else {
-                        res[index]["count"]++;
-                    }
-                });
-                return res;
-            };
-            $(".cart-icon").click(function () {
+    <script>
+        $(document).ready(function () {
+            if (sessionStorage.getItem("phone")) {
+                $(".ping").addClass("active");
                 let cart = localStorage.getItem("cart");
                 if (cart !== null) {
                     $(".ping")
                         .first()
                         .html(findOccurrences(JSON.parse(cart)).length);
                 }
+            }
+        });
+        $(".cart").on("click", function () {
+            if (sessionStorage.getItem("phone")) {
+                window.location.assign(
+                    "../html/cart.html"
+                );
+            } else {
+                window.location.replace(
+                    "../html/login.html"
+                );
+            }
+        });
+        const findOccurrences = (arr = []) => {
+            const res = [];
+            arr.forEach((el) => {
+                const index = res.findIndex((obj) => {
+                    return obj["id"] === el;
+                });
+                if (index === -1) {
+                    res.push({
+                        id: el,
+                        count: 1,
+                    });
+                } else {
+                    res[index]["count"]++;
+                }
             });
-        </script>
-    </body>
+            return res;
+        };
+        $(".cart-icon").click(function () {
+            let cart = localStorage.getItem("cart");
+            if (cart !== null) {
+                $(".ping")
+                    .first()
+                    .html(findOccurrences(JSON.parse(cart)).length);
+            }
+        });
+    </script>
+</body>
+
 </html>

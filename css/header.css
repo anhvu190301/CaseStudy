@@ -1,11 +1,18 @@
 .navbar {
-    background-color: rgb(128, 123, 212);
+    background-color: #ffd400;
     height: 60px;
 }
 
 .header-logo {
     height: 60px;
     padding: 10px;
+}
+.navbar-expand-md li:hover{
+    background-color: #539dba;
+    border-radius: 20px;
+}
+.navbar-expand-md a{
+    text-shadow: 4px 0 5px rgb(66, 74, 110);
 }
 
 .navbar-expand-md a:hover {

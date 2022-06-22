@@ -22,7 +22,7 @@ const renderIsLogin = () => {
                     class="dismiss"
                 >
                     <li>
-                        <span class="dropdown-item" onclick="logout()">Đăng xuất</span>
+                        <span class="dropdown-item" onclick="logout()">Log out</span>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@ const logout = () => {
                 >
                     <a href="../html/login.html" class="text-decoration-none">
                         <button type="button" class="btn btn-login me-2">
-                            Đăng nhập
+                            Login
                         </button></a
                     >
                     <a
@@ -81,7 +81,7 @@ const logout = () => {
                         class="text-decoration-none"
                     >
                         <button type="button" class="btn btn-register">
-                            Đăng ký
+                            Register
                         </button></a
                     >
                 </div>
